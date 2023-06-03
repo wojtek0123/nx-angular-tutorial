@@ -1,1 +1,6 @@
-<myorgtest-nx-welcome></myorgtest-nx-welcome> <router-outlet></router-outlet>
+<myorgtest-nx-welcome title="Welcom to the store!"></myorgtest-nx-welcome>
+<ul>
+  <li *ngFor="let product of products">
+    <strong>{{ product.name }}</strong> Price: {{ product.price }}
+  </li>
+</ul>
